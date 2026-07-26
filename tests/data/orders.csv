@@ -1,0 +1,7 @@
+order_id,user_id,amount,status
+101,1,250,paid
+102,1,80,paid
+103,2,120,pending
+104,3,500,paid
+105,3,60,refunded
+106,5,300,paid
