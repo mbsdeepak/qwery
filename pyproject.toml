@@ -1,0 +1,25 @@
+[project]
+name = "qwery"
+version = "0.1.0"
+description = "A tiny SQL query engine over CSV and Parquet files"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Deepak" }]
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=12"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+qwery = "qwery.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["qwery*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
