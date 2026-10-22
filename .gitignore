@@ -7,3 +7,9 @@ dist/
 .pytest_cache/
 .venv/
 venv/
+
+# personal interview-prep notes — never publish
+INTERVIEW_NOTES.md
+
+# Claude Code project memory + settings (keep tracked)
+!.claude/
